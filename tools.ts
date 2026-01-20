@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['MicrosoftTeams_ReplyToChannelMessage', 'MicrosoftTeams_ReplyToChatMessage', 'MicrosoftTeams_SendMessageToChannel', 'MicrosoftTeams_SendMessageToChat'];
+const TOOLS_WITH_APPROVAL = ['MicrosoftTeams_CreateChat', 'MicrosoftTeams_ReplyToChannelMessage', 'MicrosoftTeams_ReplyToChatMessage', 'MicrosoftTeams_SendMessageToChannel', 'MicrosoftTeams_SendMessageToChat'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
